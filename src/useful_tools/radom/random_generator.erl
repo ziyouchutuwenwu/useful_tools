@@ -8,5 +8,5 @@ random_number() ->
     Delta = Min - 1,
     <<A:32, B:32, C:32>> = crypto:strong_rand_bytes(12),
     Seed = {A, B, C},
-    random:seed(Seed),
-    random:uniform(Max - Delta) + Delta.
+    rand:seed(Seed),
+    rand:uniform(Max - Delta) + Delta.
