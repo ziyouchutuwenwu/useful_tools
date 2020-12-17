@@ -10,4 +10,4 @@
 %% ~n 表示换行符
 %% ~ts表示translation string，用来显示unicode，支持中文
 format(Format, Args) ->
-    lists:flatten(io_lib:format(Format, Args)).
+  lists:flatten(io_lib:format(Format, Args)).
